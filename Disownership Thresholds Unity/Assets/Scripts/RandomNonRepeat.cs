@@ -1,6 +1,7 @@
-﻿﻿using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SimpleVAS;
 
 public class RandomNonRepeat : MonoBehaviour { 
 
@@ -14,6 +15,9 @@ public class RandomNonRepeat : MonoBehaviour {
 	private static bool onStart = false;
 
 	void Awake () {
+		
+		possibleValues = BasicDataConfigurations.numberOfSteps;
+		repetitionPerValue = BasicDataConfigurations.stepRepetitions;
 
 		DontDestroyOnLoad (this);
 

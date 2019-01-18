@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;  
+using SimpleVAS;
 
 namespace WebcamDelay {
 	public class WebcamDisplay : MonoBehaviour {
@@ -13,10 +14,11 @@ namespace WebcamDelay {
 		public float delayTimeSeconds;
 		public int webcamDeviceID;
 
+
 		void Start () {
 			
 			WebCamDevice[] devices = WebCamTexture.devices;
-			string deviceName = devices[webcamDeviceID].name;
+			string deviceName = devices[BasicDataConfigurations.selectedWebcamDevice].name;
 			webcamTexture = new WebCamTexture(deviceName);
 			webcamTexture.Play();
 
@@ -58,6 +60,15 @@ namespace WebcamDelay {
 				renderer.material.mainTexture = delayedImage;
 			}
 
+		}
+
+		//Added
+		void OnDestroy() {
+			webcamTexture.Stop ();
+		}
+		//added
+		public void TurnOff() {
+			webcamTexture.Stop ();
 		}
 
 		IEnumerator ConvertFrame(){

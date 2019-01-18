@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -853,7 +853,7 @@ MeshRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1158469658}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1168,6 +1168,7 @@ MonoBehaviour:
   scrollValue: {fileID: 1825505998}
   csvWriter: {fileID: 1493182002}
   isForcedChoice: 0
+  toggleGroup: {fileID: 0}
 --- !u!1 &1424905803
 GameObject:
   m_ObjectHideFlags: 0

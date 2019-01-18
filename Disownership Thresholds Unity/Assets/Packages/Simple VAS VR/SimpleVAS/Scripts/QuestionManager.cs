@@ -76,9 +76,10 @@ namespace SimpleVAS
 				else {
 					currentCondition = currentCondition + 1;
 
-					if (currentCondition < ConditionDictionary.selectedOrder.Length)
-						SceneManager.LoadScene ("Inter");
-					else if (currentCondition == ConditionDictionary.selectedOrder.Length)
+					//if (currentCondition < ConditionDictionary.selectedOrder.Length)
+					if (!RandomNonRepeat.isOver)
+						SceneManager.LoadScene ("Stimulaion");
+					else 
 						SceneManager.LoadScene ("Goodbye");
 				}
 			}

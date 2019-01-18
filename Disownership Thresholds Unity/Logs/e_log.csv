@@ -1,0 +1,9 @@
+subject ID,age,gender,handedness,question ID,questionnaire type,condition,value
+e,44,Female,Rigth handed,0,ForcedChoice,na,0
+e,44,Female,Rigth handed,0,VAS,na,0.4944003
+e,44,Female,Rigth handed,0,ForcedChoice,na,1
+e,44,Female,Rigth handed,0,VAS,na,0.5916767
+e,44,Female,Rigth handed,0,ForcedChoice,na,1
+e,44,Female,Rigth handed,0,VAS,na,0.6002032
+e,44,Female,Rigth handed,0,ForcedChoice,na,1
+e,44,Female,Rigth handed,0,VAS,na,0.5903533

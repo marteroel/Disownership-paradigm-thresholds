@@ -1,0 +1,26 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using WebcamDelay;
+using SimpleVAS;
+
+public class ApplyRandomDelays : MonoBehaviour {
+
+	public WebcamDisplay webcam;
+	public RandomNonRepeat delayRandomizer;
+
+	// Use this for initialization
+	void Start () {
+		
+		float timeStepSeconds = BasicDataConfigurations.stepDelay / 1000f;
+
+		if (delayRandomizer != null) {
+			int randomizer = delayRandomizer.RandomItemFromList ();
+			webcam.delayTimeSeconds = randomizer * timeStepSeconds;
+			//Debug.Log ("the current delay time is " + delayTimeSeconds);
+		}
+
+		else 	webcam.delayTimeSeconds = 0;
+	}
+
+}
