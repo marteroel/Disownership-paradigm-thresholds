@@ -1,8 +1,10 @@
 # Disownership-paradigm-thresholds
 
-## Unity project for stimulating own-body disownership (so-called long real hand illusion) through various repetitions of different delay steps. For the long-stimulation version, please refer to: https://github.com/marteroel/Disownership-paradigm-long . This project includes a setup GUI, delays webcam feed and uses VAS and forced choice questionnaires on a VR headset. It should be modified in order to implement similar setups.
+## Unity project for stimulating own-body disownership (real hand illusion) through repetitions of various delay steps. This project includes a setup GUI, delays webcam feed and uses VAS and forced choice questionnaires on a VR headset. It should be modified in order to implement similar setups.
 
 IMPORTANT: DO NOT COMMIT TO THE MAIN BRANCH WITHOUT PREVIOUS AUTHORIZATION.
+
+Note: For the long-stimulation version, please refer to: https://github.com/marteroel/Disownership-paradigm-long 
 
 The Unity project includes the following scenes in English.
 
@@ -24,8 +26,8 @@ The Unity project includes the following scenes in English.
 
 Technical notes:
 
-    Tested with the Oculus Rift CV1
+- Tested with the Oculus Rift CV1
 
-    Running on Unity 2018.2.8f1
+- Running on Unity 2018.2.8f1
 
-    Uses the following Unity packages: extOSC, VRStandardAssets (Unity) and modified versions of SimpleWebcamDelay (BSP Lab), Simple VAS VR (BSP Lab), Serial Messenger (BSP Lab)
+- Uses the following Unity packages: extOSC, VRStandardAssets (Unity) and modified versions of SimpleWebcamDelay (BSP Lab), Simple VAS VR (BSP Lab), Serial Messenger (BSP Lab)
