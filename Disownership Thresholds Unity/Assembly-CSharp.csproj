@@ -138,6 +138,7 @@
     <Compile Include="Assets\Packages\VRStandardAssets\Scripts\VRInteractiveItem.cs" />
     <Compile Include="Assets\Packages\VRStandardAssets\Scripts\VRTrackingReset.cs" />
     <Compile Include="Assets\Scripts\ApplyRandomDelays.cs" />
+    <Compile Include="Assets\Scripts\ConditionalInstructions.cs" />
     <Compile Include="Assets\Scripts\RandomNonRepeat.cs" />
     <Compile Include="Assets\Scripts\StimulationDuration.cs" />
     <Compile Include="Assets\Scripts\WebcamUI.cs" />
