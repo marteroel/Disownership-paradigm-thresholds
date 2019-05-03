@@ -12,9 +12,9 @@ namespace SimpleVAS {
 		public Text genderField, handednessField;
 		public Button nextButton;
 		public Toggle calibrationToggle;
-		//added
-		public Dropdown webcamDevice;
-		public static string ID, age, gender, handedness;
+        //added
+        public Dropdown webcamDevice, conditionInput;
+		public static string ID, age, gender, handedness, condition;
 		public static bool useCalibration;
 		//added
 		public static int selectedWebcamDevice, stepRepetitions, numberOfSteps, stepDelay;
@@ -60,6 +60,8 @@ namespace SimpleVAS {
 			stepRepetitions = int.Parse (stepRepetitionsField.text);
 			numberOfSteps = int.Parse (numberOfStepsField.text);
 			stepDelay = int.Parse (stepDelayField.text);
+
+            condition = conditionInput.options[conditionInput.value].text;
 
 			Debug.Log ("the duration is " + trialDuration +  " repetitions " + stepRepetitions + " steps " + " and the the delay is " + stepDelay);
 			storePreferences ();

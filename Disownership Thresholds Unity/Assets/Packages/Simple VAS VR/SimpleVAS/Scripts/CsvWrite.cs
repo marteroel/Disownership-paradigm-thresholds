@@ -38,7 +38,7 @@ namespace SimpleVAS
 		public void onNextButtonPressed(){
 			if (BasicDataConfigurations.ID == null)
 				LoadNull ();
-			WriteToFile (BasicDataConfigurations.ID, BasicDataConfigurations.age, BasicDataConfigurations.gender, BasicDataConfigurations.handedness, QuestionManager.questionnaireItem,  SceneManager.GetActiveScene().name, "na", QuestionManager.VASvalue);
+			WriteToFile (BasicDataConfigurations.ID, BasicDataConfigurations.age, BasicDataConfigurations.gender, BasicDataConfigurations.handedness, QuestionManager.questionnaireItem,  SceneManager.GetActiveScene().name, BasicDataConfigurations.condition, QuestionManager.VASvalue);
 		}
 
 		void LoadNull(){
@@ -47,6 +47,7 @@ namespace SimpleVAS
 			BasicDataConfigurations.age = na;
 			BasicDataConfigurations.gender = na;
 			BasicDataConfigurations.handedness = na;
+            BasicDataConfigurations.condition = na;
 			ConditionDictionary.selectedOrder = new string[3] {na, na, na};
 		}
 
