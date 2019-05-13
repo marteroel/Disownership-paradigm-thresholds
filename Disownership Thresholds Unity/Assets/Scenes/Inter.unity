@@ -1066,11 +1066,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\rThe experimenter will now move your lef hand repeatedly to the sides,
-    please do not move your left hand in this process. After each round, we ask you
-    if the touch you saw and felt was in sync and how much you felt that your left
-    hand was yours. Please answer with your head movements. This task will be repeated
-    a few times."
+  m_Text: "Der Versuchsleiter wird nun Ihre linke Hand mehrmals zur Seite bewegen.
+    Bitte bewegen Sie f\xFCr diese Aufgabe nicht selbst Ihre Hand. Nach jeder Runde
+    fragen wir Sie, ob die gesehene Ber\xFChrung synchron war mit der gef\xFChlten
+    Ber\xFChrung. Zudem fragen wir Sie nach jeder Runde, wie sehr sie f\xFChlten,
+    dass Ihre linke Hand Ihre eigene Hand war. Bitte antworten Sie durch Bewegung
+    des Kopfes. Diese Aufgabe wird einige Male wiederholt."
 --- !u!222 &1309759693
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1094,7 +1095,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -3}
-  m_SizeDelta: {x: 800, y: 200}
+  m_SizeDelta: {x: 800, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1338755279
 GameObject:
@@ -1129,7 +1130,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -3}
-  m_SizeDelta: {x: 800, y: 200}
+  m_SizeDelta: {x: 800, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1338755281
 MonoBehaviour:
@@ -1163,10 +1164,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You will now move your left hand repeatedly to the sides as practiced before.
-    After each round, we ask you if the touch you saw and felt was in sync and how
-    much you felt that your left hand was yours. Please answer with your head movements.
-    This task will be repeated a few times.
+  m_Text: "Sie werden nun Ihre linke Hand mehrmals zur Seite bewegen, wie Sie dies
+    soeben ge\xFCbt haben. Nach jeder Runde fragen wir Sie, ob die gesehene Ber\xFChrung
+    synchron war mit der gef\xFChlten Ber\xFChrung. Zudem fragen wir Sie nach jeder
+    Runde, wie sehr sie f\xFChlten, dass Ihre linke Hand Ihre eigene Hand war. Bitte
+    antworten Sie durch Bewegung des Kopfes. Diese Aufgabe wird einige Male wiederholt."
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0
