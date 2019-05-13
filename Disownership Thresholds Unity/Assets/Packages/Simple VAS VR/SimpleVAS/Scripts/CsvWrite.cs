@@ -38,7 +38,7 @@ namespace SimpleVAS
 		public void onNextButtonPressed(){
 			if (BasicDataConfigurations.ID == null)
 				LoadNull ();
-			WriteToFile (BasicDataConfigurations.ID, BasicDataConfigurations.age, BasicDataConfigurations.gender, BasicDataConfigurations.handedness, QuestionManager.questionnaireItem,  SceneManager.GetActiveScene().name, BasicDataConfigurations.condition, RandomNonRepeat.conditionDelayTime.ToString(), QuestionManager.VASvalue);
+			WriteToFile (BasicDataConfigurations.ID, BasicDataConfigurations.age, BasicDataConfigurations.gender, BasicDataConfigurations.handedness, QuestionManager.questionnaireItem,  SceneManager.GetActiveScene().name, BasicDataConfigurations.condition, ApplyRandomDelays.conditionDelayTime.ToString(), QuestionManager.VASvalue);
 		}
 
 		void LoadNull(){
