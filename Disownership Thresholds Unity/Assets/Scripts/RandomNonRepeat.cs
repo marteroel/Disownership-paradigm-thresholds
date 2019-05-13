@@ -14,6 +14,8 @@ public class RandomNonRepeat : MonoBehaviour {
 	public static bool isOver = false;
 	private static bool onStart = false;
 
+    public static float conditionDelayTime;
+
 	void Awake () {
 		
 		possibleValues = BasicDataConfigurations.numberOfSteps;
@@ -44,10 +46,12 @@ public class RandomNonRepeat : MonoBehaviour {
 			int randomIndex = Random.Range (0, possibleItems.Count);
 			int selectedItem = possibleItems [randomIndex];
 			possibleItems.RemoveAt (randomIndex);
-			//Debug.Log ("took the item " + selectedItem);
+            //Debug.Log ("took the item " + selectedItem);
 
-			return selectedItem;
+            conditionDelayTime = selectedItem / 1000f;
 
+            return selectedItem;
+            
 		} 
 
 		else {
@@ -56,7 +60,8 @@ public class RandomNonRepeat : MonoBehaviour {
 			int selectedItem = possibleItems [randomIndex];
 			possibleItems.RemoveAt (randomIndex);
 			isOver = true;
-			return selectedItem;
+            conditionDelayTime = selectedItem / 1000f;
+            return selectedItem;
 		}
 	}
 
