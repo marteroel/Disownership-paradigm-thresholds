@@ -2086,8 +2086,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Wir beginnen gleich mit dem Experiment. Wenn Du bereit bist zu beginnen,
-    dann w\xE4hle \"Ich habe verstanden\" und \"Weiter\""
+  m_Text: "Vor dem Experiment werden Sie gleich einen Probedurchlauf machen. Wenn
+    Sie bereit sind zu beginnen, dann w\xE4hlen Sie \"Ich habe verstanden\" und \"Weiter\"."
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0
