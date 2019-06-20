@@ -504,6 +504,7 @@ GameObject:
   - component: {fileID: 1880146960}
   - component: {fileID: 1880146959}
   - component: {fileID: 1880146962}
+  - component: {fileID: 1880146963}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -564,6 +565,17 @@ MonoBehaviour:
   screenOff: {fileID: 578878306}
   sceneToLoad: ForcedChoice
   webcam: {fileID: 768512868}
+--- !u!114 &1880146963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1880146958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4625e7af16a2ce14e899bc24910c876b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1949641884
 GameObject:
   m_ObjectHideFlags: 0

@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 65
+  controlID: 66
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 66
+  controlID: 67
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 67
+  controlID: 68
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 331
     height: 808
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -254,8 +254,8 @@ MonoBehaviour:
     y: 0
     width: 303
     height: 1221
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 0, y: 0, z: 100}
     speed: 2
-    m_Value: {x: 29.879665, y: 14.823787, z: 95.11772}
+    m_Value: {x: 0, y: 0, z: 100}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -327,9 +327,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0, y: 0, z: -0, w: -1}
   m_Size:
-    m_Target: 178.47481
+    m_Target: 144.0871
     speed: 2
-    m_Value: 170.95973
+    m_Value: 144.0871
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -368,28 +368,28 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3c3d0000
+    m_SelectedIDs: 1c0a0000
     m_LastClickedID: 0
-    m_ExpandedIDs: 8c4dffff1af0ffff5afbffff00000000
+    m_ExpandedIDs: 56ddf8ff4259f9ff685ef9fffae0f9ffe6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: EventSystem
+      m_OriginalName: EventSystem
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 15924
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - Stimulation
+  - Intro
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -535,11 +535,11 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Marte\Documents\GitHub\Disownership-paradigm-thresholds\Disownership
     Thresholds Unity
@@ -547,23 +547,23 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2c120000
-    m_LastClickedID: 4652
-    m_ExpandedIDs: 00000000480a0000b40d0000e00d000000ca9a3b
+    m_SelectedIDs: 160d0000
+    m_LastClickedID: 3350
+    m_ExpandedIDs: 00000000040a0000700d00009c0d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Scenes
-      m_OriginalName: Scenes
+      m_Name: Scripts
+      m_OriginalName: Scripts
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 3418
+      m_UserData: 4584
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 4
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -577,7 +577,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000480a0000b40d0000e00d0000
+    m_ExpandedIDs: 00000000040a0000700d00009c0d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -621,7 +621,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
