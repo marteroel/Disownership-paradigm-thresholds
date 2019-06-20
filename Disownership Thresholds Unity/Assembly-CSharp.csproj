@@ -140,6 +140,7 @@
     <Compile Include="Assets\Scripts\ApplyRandomDelays.cs" />
     <Compile Include="Assets\Scripts\RandomNonRepeat.cs" />
     <Compile Include="Assets\Scripts\StimulationDuration.cs" />
+    <Compile Include="Assets\Scripts\TrialOnsetAndOffsetTime.cs" />
     <Compile Include="Assets\Scripts\WebcamUI.cs" />
     <None Include="Assets\Packages\VRSampleScenes\Shaders\UnlitTransparentParam.shader" />
     <None Include="Assets\Packages\VRSampleScenes\Shaders\UIOverlay.shader" />

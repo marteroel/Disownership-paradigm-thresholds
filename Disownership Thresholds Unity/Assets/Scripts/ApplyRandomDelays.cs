@@ -9,6 +9,7 @@ public class ApplyRandomDelays : MonoBehaviour {
 	public WebcamDisplay webcam;
 	public RandomNonRepeat delayRandomizer;
 
+    public static float conditionDelayTime;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,7 +18,9 @@ public class ApplyRandomDelays : MonoBehaviour {
 		if (delayRandomizer != null) {
 			int randomizer = delayRandomizer.RandomItemFromList ();
 			webcam.delayTimeSeconds = randomizer * timeStepSeconds;
-			//Debug.Log ("the current delay time is " + delayTimeSeconds);
+            //Debug.Log ("the current delay time is " + delayTimeSeconds);
+
+            conditionDelayTime = randomizer * timeStepSeconds;
 		}
 
 		else 	webcam.delayTimeSeconds = 0;
