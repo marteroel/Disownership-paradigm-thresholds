@@ -25,5 +25,6 @@ public class TrialOnsetAndOffsetTime : MonoBehaviour {
     {
         offsetTime = Time.realtimeSinceStartup;
         //Debug.Log("offset time is " + offsetTime);
+        SceneManager.sceneUnloaded -= GetTrialOffset;
     }
 }
