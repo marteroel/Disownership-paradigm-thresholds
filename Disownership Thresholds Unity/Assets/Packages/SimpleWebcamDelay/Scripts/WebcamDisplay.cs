@@ -19,8 +19,8 @@ namespace WebcamDelay {
 			
 			WebCamDevice[] devices = WebCamTexture.devices;
 			string deviceName = devices[BasicDataConfigurations.selectedWebcamDevice].name;
-			webcamTexture = new WebCamTexture(deviceName);
-			webcamTexture.Play();
+			webcamTexture = new WebCamTexture(deviceName, 1024, 768, 30);
+            webcamTexture.Play();
 
 		}
 			
