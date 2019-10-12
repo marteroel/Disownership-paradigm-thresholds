@@ -12,10 +12,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Instructions.unity
     guid: 7527b78934860824ea7df49561f949c1
   - enabled: 1
+    path: Assets/Scenes/Inter.unity
+    guid: 9172cefc501255149933a3f129c8139c
+  - enabled: 0
     path: Assets/Scenes/StimulationTest.unity
     guid: b892704149ce0e847a930c2dfbe32e51
-  - enabled: 1
-    path: Assets/Scenes/Inter.unity
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/590770d30d1ed7041a7cb4fed1fdbf30
     guid: 590770d30d1ed7041a7cb4fed1fdbf30
   - enabled: 1
     path: Assets/Scenes/Stimulation.unity
