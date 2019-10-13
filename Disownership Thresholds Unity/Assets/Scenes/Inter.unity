@@ -613,7 +613,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Bitte halten Sie den Kopf nun m\xF6glichst ruhig"
+  m_Text: "Bitte Blick wieder auf Ihren Bauch richten und m\xF6glichst nicht bewegen"
 --- !u!222 &1417890437
 CanvasRenderer:
   m_ObjectHideFlags: 0

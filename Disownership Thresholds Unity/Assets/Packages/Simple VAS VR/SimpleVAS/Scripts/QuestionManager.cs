@@ -78,7 +78,7 @@ namespace SimpleVAS
 
 					//if (currentCondition < ConditionDictionary.selectedOrder.Length)
 					if (!RandomNonRepeat.isOver)
-						SceneManager.LoadScene ("Stimulation");
+						SceneManager.LoadScene ("Inter");
 					else 
 						SceneManager.LoadScene ("Goodbye");
 				}
