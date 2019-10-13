@@ -2458,8 +2458,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Es folgen nun mehrere kurze Bl\xF6cke, jeweils gefolgt von ein paar Fragen.
-    Halten Sie Ihren Kopf w\xE4hrend den Bl\xF6cken m\xF6glichst ruhig. \n\nWenn Sie
-    die Instruktionen verstanden haben, w\xE4hlen Sie 'Ja' und dann 'Weiter'."
+    Halten Sie Ihren Kopf und K\xF6rper w\xE4hrend den Bl\xF6cken m\xF6glichst ruhig.
+    \n\nWenn Sie die Instruktionen verstanden haben, w\xE4hlen Sie 'Ja' und dann 'Weiter'."
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0
