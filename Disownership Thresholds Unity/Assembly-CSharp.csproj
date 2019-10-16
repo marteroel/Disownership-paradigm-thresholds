@@ -68,6 +68,7 @@
     <Compile Include="Assets\Packages\Simple VAS VR\SimpleVAS\Scripts\CsvWrite.cs" />
     <Compile Include="Assets\Packages\Simple VAS VR\SimpleVAS\Scripts\DebriefingText.cs" />
     <Compile Include="Assets\Packages\Simple VAS VR\SimpleVAS\Scripts\LoadScene.cs" />
+    <Compile Include="Assets\Packages\Simple VAS VR\SimpleVAS\Scripts\LoadSceneOnTime.cs" />
     <Compile Include="Assets\Packages\Simple VAS VR\SimpleVAS\Scripts\MakeInteractable.cs" />
     <Compile Include="Assets\Packages\Simple VAS VR\SimpleVAS\Scripts\QuestionManager.cs" />
     <Compile Include="Assets\Packages\Simple VAS VR\SimpleVRUI\Scripts\PrintSomething.cs" />

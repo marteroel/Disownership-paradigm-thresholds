@@ -12,17 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Instructions.unity
     guid: 7527b78934860824ea7df49561f949c1
   - enabled: 1
-    path: Assets/Scenes/Inter.unity
-    guid: 9172cefc501255149933a3f129c8139c
-  - enabled: 0
     path: Assets/Scenes/StimulationTest.unity
-    guid: b892704149ce0e847a930c2dfbe32e51
-  - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/590770d30d1ed7041a7cb4fed1fdbf30
-    guid: 590770d30d1ed7041a7cb4fed1fdbf30
+    guid: b55fd3c258386dd40aed836014a7d771
   - enabled: 1
     path: Assets/Scenes/Stimulation.unity
     guid: 2ad590c7b2cdae441ab0e9d6601b72a6
+  - enabled: 1
+    path: Assets/Scenes/Inter.unity
+    guid: 9172cefc501255149933a3f129c8139c
   - enabled: 1
     path: Assets/Scenes/VAS.unity
     guid: 1ac74d65664d29d448de307384961043
