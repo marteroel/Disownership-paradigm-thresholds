@@ -18,7 +18,7 @@ public class ApplyRandomDelays : MonoBehaviour {
 		if (delayRandomizer != null) {
 			int randomizer = delayRandomizer.RandomItemFromList ();
 			webcam.delayTimeSeconds = randomizer * timeStepSeconds;
-            //Debug.Log ("the current delay time is " + delayTimeSeconds);
+            //Debug.Log ("the current delay time is " + webcam.delayTimeSeconds);
 
             conditionDelayTime = randomizer * timeStepSeconds;
 		}

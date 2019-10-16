@@ -11,10 +11,14 @@ public class StimulationDuration : MonoBehaviour {
 	public string sceneToLoad;
 	public WebcamDisplay webcam;
 
-	// Use this for initialization
-	void Start () {
+    private float stimulationTime;
+
+    // Use this for initialization
+    void Start () {
 		screenOff.SetActive (false);
-		StartCoroutine ("ChangeSceneAtTime");
+        stimulationTime = BasicDataConfigurations.trialDuration + webcam.delayTimeSeconds;
+
+        StartCoroutine ("ChangeSceneAtTime");
 	}
 	
 	// Update is called once per frame
@@ -24,7 +28,7 @@ public class StimulationDuration : MonoBehaviour {
 
 	private IEnumerator ChangeSceneAtTime (){
 
-		yield return new WaitForFixedTime (10f);
+		yield return new WaitForFixedTime (stimulationTime);
 		screenOff.SetActive (true); //turns off screen 
 		SceneManager.LoadScene(sceneToLoad);
 		webcam.TurnOff ();
