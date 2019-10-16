@@ -18,6 +18,10 @@ public class StimulationDuration : MonoBehaviour {
 		screenOff.SetActive (false);
         stimulationTime = BasicDataConfigurations.trialDuration + webcam.delayTimeSeconds;
 
+        //Debug.Log("Time scale: " + Time.timeScale);
+        //Debug.Log("Fixed Unscaled Time 1: " + Time.fixedUnscaledTime);
+        //Debug.Log("Fixed time 1: " + Time.fixedTime);
+        //Debug.Log("Time to wait: " + BasicDataConfigurations.trialDuration + " + " + webcam.delayTimeSeconds + " = " + stimulationTime);
         StartCoroutine ("ChangeSceneAtTime");
 	}
 	
@@ -28,8 +32,10 @@ public class StimulationDuration : MonoBehaviour {
 
 	private IEnumerator ChangeSceneAtTime (){
 
-		yield return new WaitForFixedTime (stimulationTime);
-		screenOff.SetActive (true); //turns off screen 
+		yield return new WaitForSecondsRealtime(stimulationTime);
+        //Debug.Log("Fixed Unscaled Time 2: " + Time.fixedUnscaledTime);
+        //Debug.Log("Fixed time 2: " + Time.fixedTime);
+        screenOff.SetActive (true); //turns off screen 
 		SceneManager.LoadScene(sceneToLoad);
 		webcam.TurnOff ();
 
