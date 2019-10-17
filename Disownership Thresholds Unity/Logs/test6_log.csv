@@ -1,7 +1,0 @@
-subject ID,age,gender,handedness,question ID,questionnaire type,delay,condition,value
-test6,33,Female,Rigth handed,0,ForcedChoice,0,Coupling A,1
-test6,33,Female,Rigth handed,0,VAS,0,Coupling A,0.835913
-test6,33,Female,Rigth handed,1,VAS,0,Coupling A,0.2690598
-test6,33,Female,Rigth handed,0,ForcedChoice,5,Coupling A,0
-test6,33,Female,Rigth handed,0,VAS,5,Coupling A,0.1116006
-test6,33,Female,Rigth handed,1,VAS,5,Coupling A,0.5997242
