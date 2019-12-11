@@ -1066,12 +1066,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Der Versuchsleiter wird nun Ihre linke Hand mehrmals zur Seite bewegen.
-    Bitte bewegen Sie f\xFCr diese Aufgabe nicht selbst Ihre Hand. Nach jeder Runde
-    fragen wir Sie, ob die gesehene Ber\xFChrung synchron war mit der gef\xFChlten
-    Ber\xFChrung. Zudem fragen wir Sie nach jeder Runde, wie sehr sie f\xFChlten,
-    dass Ihre linke Hand Ihre eigene Hand war. Bitte antworten Sie durch Bewegung
-    des Kopfes. Diese Aufgabe wird einige Male wiederholt."
+  m_Text: "Du wirst nun in mehreren Durchg\xE4ngen f\xFCr kurze Zeit einen K\xF6rper
+    sehen, der ber\xFChrt wird w\xE4hrend dein eigenes Bein ber\xFChrt wird. Nach
+    jedem Durchgang fragen wir dich, ob die gesehene und die gesp\xFCrte Ber\xFChrung
+    synchron waren und wie stark du das Gef\xFChl hattest, dass der gesehene K\xF6rper
+    deiner war. Bitte antworte mit deinen Kopfbewegungen"
 --- !u!222 &1309759693
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1113,7 +1112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1338755280
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1164,11 +1163,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Sie werden nun Ihre linke Hand mehrmals zur Seite bewegen, wie Sie dies
-    soeben ge\xFCbt haben. Nach jeder Runde fragen wir Sie, ob die gesehene Ber\xFChrung
-    synchron war mit der gef\xFChlten Ber\xFChrung. Zudem fragen wir Sie nach jeder
-    Runde, wie sehr sie f\xFChlten, dass Ihre linke Hand Ihre eigene Hand war. Bitte
-    antworten Sie durch Bewegung des Kopfes. Diese Aufgabe wird einige Male wiederholt."
+  m_Text: "Du wirst nun in mehreren Durchg\xE4ngen f\xFCr kurze Zeit einen K\xF6rper
+    sehen, der ber\xFChrt wird w\xE4hrend dein eigenes Bein ber\xFChrt wird. Nach
+    jedem Durchgang fragen wir dich, ob die gesehene und die gesp\xFCrte Ber\xFChrung
+    synchron waren und wie stark du das Gef\xFChl hattest, dass der gesehene K\xF6rper
+    deiner war. Bitte antworte mit deinen Kopfbewegungen"
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0

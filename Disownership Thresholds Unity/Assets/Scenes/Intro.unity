@@ -6128,7 +6128,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Active movement
+  m_Text: Left foot
 --- !u!222 &964081129
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13316,9 +13316,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Active movement
+    - m_Text: Left foot
       m_Image: {fileID: 0}
-    - m_Text: Passive movement
+    - m_Text: Right foot
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
