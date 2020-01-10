@@ -7,7 +7,9 @@ namespace SimpleVAS {
 		public class Calibrator : MonoBehaviour {
 
 		void Start(){
-			if (BasicDataConfigurations.useCalibration)
+            BasicDataConfigurations.useCalibration = true;
+
+            if (BasicDataConfigurations.useCalibration)
 				InputTracking.disablePositionalTracking = true;
 		}
 
