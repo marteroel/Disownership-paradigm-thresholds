@@ -44,9 +44,10 @@ namespace SimpleVAS
 
 
 		public void OnNextButton() {
-		
+            //Debug.Log("current condition " + currentCondition);
 			nextButton.interactable = false;
 			questionnaireItem = currentItem.ToString ();
+
 			if (!isForcedChoice)
 				VASvalue = scrollValue.value.ToString ();
 			else {
@@ -57,13 +58,11 @@ namespace SimpleVAS
 
 			if (scrollValue != null)
 				scrollValue.GetComponent<Scrollbar>().handleRect.gameObject.SetActive(false);
-				//gameObject.SetActive(false);
 
 			currentItem ++;
 
 			if (currentItem < questionList.Count) 
 				questionUI.text = questionList [currentItem];
-
 
 			else if (currentItem == questionList.Count) {
 				currentItem = 0;
@@ -74,14 +73,28 @@ namespace SimpleVAS
 						SceneManager.LoadScene ("VAS");
 
 				else {
-					currentCondition = currentCondition + 1;
 
-					//if (currentCondition < ConditionDictionary.selectedOrder.Length)
-					if (!RandomNonRepeat.isOver)
-						SceneManager.LoadScene ("Stimulation");
-					else 
-						SceneManager.LoadScene ("Goodbye");
-				}
+
+                    //if (currentCondition < ConditionDictionary.selectedOrder.Length)
+                    if (!RandomNonRepeat.instance.isOver) {
+                        SceneManager.LoadScene ("Stimulation");            
+                    }
+
+                    else {
+
+                        if (currentCondition < 7) {
+                            SceneManager.LoadScene("Inter");
+                            currentCondition++;
+                            RandomNonRepeat.instance.InitializeOptions();
+                        }
+                        else
+                            SceneManager.LoadScene("Goodbye");
+
+                        
+                    }
+
+
+                }
 			}
 		}
 	}

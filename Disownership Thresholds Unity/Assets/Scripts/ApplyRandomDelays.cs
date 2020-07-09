@@ -7,7 +7,6 @@ using SimpleVAS;
 public class ApplyRandomDelays : MonoBehaviour {
 
 	public WebcamDisplay webcam;
-	public RandomNonRepeat delayRandomizer;
 
 	public static float conditionDelayTime;
 
@@ -16,15 +15,11 @@ public class ApplyRandomDelays : MonoBehaviour {
 		
 		float timeStepSeconds = BasicDataConfigurations.stepDelay / 1000f;
 
-		if (delayRandomizer != null) {
-			int randomizer = delayRandomizer.RandomItemFromList ();
+			int randomizer = RandomNonRepeat.instance.RandomItemFromList ();
 			webcam.delayTimeSeconds = randomizer * timeStepSeconds;
 			//Debug.Log ("the current delay time is " + delayTimeSeconds);
 
 			conditionDelayTime = randomizer * timeStepSeconds;
-		}
-
-		else 	webcam.delayTimeSeconds = 0;
 	}
 
 }

@@ -10,9 +10,13 @@ public class ConditionalInstructions : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        if (BasicDataConfigurations.condition == "Active movement")
-            instructionsA.gameObject.SetActive(true);
+        //Debug.Log("current condition is : " + QuestionManager.currentCondition);
+
+        if (BasicDataConfigurations.condition == "1")
+            if(QuestionManager.currentCondition == 0 | QuestionManager.currentCondition == 2 | QuestionManager.currentCondition == 5 | QuestionManager.currentCondition == 7)
+                instructionsA.gameObject.SetActive(true);
         else
-            instructionsB.gameObject.SetActive(true);
+            if (QuestionManager.currentCondition == 1 | QuestionManager.currentCondition == 3 | QuestionManager.currentCondition == 4 | QuestionManager.currentCondition == 6)
+                instructionsB.gameObject.SetActive(true);
 	}
 }

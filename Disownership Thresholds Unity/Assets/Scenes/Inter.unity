@@ -1094,11 +1094,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Sie werden nun in mehreren Durchg\xE4ngen f\xFCr kurze Zeit einen K\xF6rper
-    sehen, der ber\xFChrt wird w\xE4hrend Ihr eigener Fuss ber\xFChrt wird. Nach jedem
-    Durchgang fragen wir Sie, ob die gesehene und die gesp\xFCrte Ber\xFChrung synchron
-    waren und wie stark Sie das Gef\xFChl hatten, dass der gesehene K\xF6rper ihr
-    eigener war. Bitte antworten Sie mit Kopfbewegungen."
+  m_Text: movement
 --- !u!222 &1309759693
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1191,11 +1187,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Sie werden nun in mehreren Durchg\xE4ngen f\xFCr kurze Zeit einen K\xF6rper
-    sehen, der ber\xFChrt wird w\xE4hrend Ihr eigener Fuss ber\xFChrt wird. Nach jedem
-    Durchgang fragen wir Sie, ob die gesehene und die gesp\xFCrte Ber\xFChrung synchron
-    waren und wie stark Sie das Gef\xFChl hatten, dass der gesehene K\xF6rper ihr
-    eigener war. Bitte antworten Sie mit Kopfbewegungen."
+  m_Text: touch
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0
