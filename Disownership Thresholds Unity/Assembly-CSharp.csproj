@@ -144,6 +144,7 @@
     <Compile Include="Assets\Rod and Frame\Scripts\WriteRodAndFrameData.cs" />
     <Compile Include="Assets\Scripts\ApplyRandomDelays.cs" />
     <Compile Include="Assets\Scripts\ConditionalInstructions.cs" />
+    <Compile Include="Assets\Scripts\DontDestroy.cs" />
     <Compile Include="Assets\Scripts\ProprioceptiveTask.cs" />
     <Compile Include="Assets\Scripts\RandomNonRepeat.cs" />
     <Compile Include="Assets\Scripts\StimulationDuration.cs" />
