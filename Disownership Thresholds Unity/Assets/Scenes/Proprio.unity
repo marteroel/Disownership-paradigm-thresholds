@@ -737,7 +737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conditionText: {fileID: 880620047}
   responseField: {fileID: 622878752}
-  sceneToLoad: Inter
+  sceneToLoad: StimulationTest
 --- !u!4 &1678380904
 Transform:
   m_ObjectHideFlags: 0
