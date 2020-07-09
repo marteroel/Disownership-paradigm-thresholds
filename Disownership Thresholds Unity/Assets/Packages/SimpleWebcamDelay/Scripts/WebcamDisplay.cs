@@ -17,12 +17,13 @@ namespace WebcamDelay {
 
 		void Start () {
 			
-			WebCamDevice[] devices = WebCamTexture.devices;
-			string deviceName = devices[BasicDataConfigurations.selectedWebcamDevice].name;
-			webcamTexture = new WebCamTexture(deviceName, 1024, 768);
-			webcamTexture.Play();
-
-		}
+			//WebCamDevice[] devices = WebCamTexture.devices;
+			//string deviceName = devices[BasicDataConfigurations.selectedWebcamDevice].name;
+			//webcamTexture = new WebCamTexture(deviceName, 1024, 768);
+			
+            webcamTexture = Webcam.instance.webcamTexture;
+            webcamTexture.Play();
+        }
 			
 
 		void Update () {
@@ -64,11 +65,11 @@ namespace WebcamDelay {
 
 		//Added
 		void OnDestroy() {
-			webcamTexture.Stop ();
+			//webcamTexture.Stop ();
 		}
 		//added
 		public void TurnOff() {
-			webcamTexture.Stop ();
+			//webcamTexture.Stop ();
 		}
 
 		IEnumerator ConvertFrame(){

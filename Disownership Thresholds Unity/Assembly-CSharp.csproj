@@ -137,10 +137,17 @@
     <Compile Include="Assets\Packages\VRStandardAssets\Scripts\VRInput.cs" />
     <Compile Include="Assets\Packages\VRStandardAssets\Scripts\VRInteractiveItem.cs" />
     <Compile Include="Assets\Packages\VRStandardAssets\Scripts\VRTrackingReset.cs" />
+    <Compile Include="Assets\Rod and Frame\Scripts\CenterView.cs" />
+    <Compile Include="Assets\Rod and Frame\Scripts\RodAndFrameController.cs" />
+    <Compile Include="Assets\Rod and Frame\Scripts\TrialDictionary.cs" />
+    <Compile Include="Assets\Rod and Frame\Scripts\UIFader.cs" />
+    <Compile Include="Assets\Rod and Frame\Scripts\WriteRodAndFrameData.cs" />
     <Compile Include="Assets\Scripts\ApplyRandomDelays.cs" />
     <Compile Include="Assets\Scripts\ConditionalInstructions.cs" />
+    <Compile Include="Assets\Scripts\ProprioceptiveTask.cs" />
     <Compile Include="Assets\Scripts\RandomNonRepeat.cs" />
     <Compile Include="Assets\Scripts\StimulationDuration.cs" />
+    <Compile Include="Assets\Scripts\Webcam.cs" />
     <Compile Include="Assets\Scripts\WebcamUI.cs" />
     <None Include="Assets\Packages\VRSampleScenes\Shaders\UnlitTransparentParam.shader" />
     <None Include="Assets\Packages\VRSampleScenes\Shaders\UIOverlay.shader" />

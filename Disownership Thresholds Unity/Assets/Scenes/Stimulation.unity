@@ -672,7 +672,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   webcam: {fileID: 768512868}
-  delayRandomizer: {fileID: 1880146960}
 --- !u!114 &1880146960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,6 +685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   possibleValues: 0
   repetitionPerValue: 0
+  isOver: 0
 --- !u!4 &1880146961
 Transform:
   m_ObjectHideFlags: 0
