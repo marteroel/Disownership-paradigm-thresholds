@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Text;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 namespace SimpleVAS
 {
@@ -11,9 +12,18 @@ public class CsvRead : MonoBehaviour {
 	public string file;
 	public static List<string> questionnaireInput  = new List<string>();
 
+    private string file_fc_touch = "fc_touch";
+    private string file_fc_move = "fc_movement";
 
-	// Use this for initialization
-	void Awake () {
+    // Use this for initialization
+    void Awake () {
+            if (SceneManager.GetActiveScene().name == "ForcedChoice") {
+                if (QuestionManager.conditionTouchOrMove == "touch")
+                    Load(file_fc_touch, questionnaireInput);
+                else
+                    Load(file_fc_move, questionnaireInput);
+            }
+
 		Load (file, questionnaireInput);
 	}
 		
