@@ -655,6 +655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1006617758}
   - component: {fileID: 1006617757}
+  - component: {fileID: 1006617759}
   m_Layer: 0
   m_Name: Sound
   m_TagString: Untagged
@@ -672,7 +673,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5049de5d9ed05da48a303ce93996b7d4, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
@@ -770,6 +771,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1006617759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1006617756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 372fc560798c8954883bb757a8d3cb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audio: {fileID: 1006617757}
 --- !u!1 &1315862972
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,6 +854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1678380904}
   - component: {fileID: 1678380903}
+  - component: {fileID: 1678380905}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -875,6 +889,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1678380905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1678380902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3963578546369e459d3359c8618b49a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inOnStart: 1
 --- !u!1 &1840706119
 GameObject:
   m_ObjectHideFlags: 0

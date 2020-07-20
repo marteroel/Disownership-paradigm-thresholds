@@ -36,7 +36,7 @@ public class ProprioceptiveTask : MonoBehaviour {
 
         if (options.Count < 1 ) {
             SceneManager.LoadScene(sceneToLoad);
-            Debug.Log("finished");
+            //Debug.Log("finished");
         }
         else {
 
