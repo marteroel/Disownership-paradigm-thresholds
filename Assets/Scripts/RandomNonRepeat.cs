@@ -18,13 +18,21 @@ public class RandomNonRepeat : MonoBehaviour {
 
 	void Awake () {
 
-        if (instance == null)
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        else
+        {
             instance = this;
-		
-		possibleValues = BasicDataConfigurations.numberOfSteps;
+        }
+
+        DontDestroyOnLoad(this);
+
+        possibleValues = BasicDataConfigurations.numberOfSteps;
 		repetitionPerValue = BasicDataConfigurations.stepRepetitions;
 
-		DontDestroyOnLoad (this);
 
         if (!onStart)
             InitializeOptions();
