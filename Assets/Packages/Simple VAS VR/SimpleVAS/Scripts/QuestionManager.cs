@@ -89,7 +89,7 @@ namespace SimpleVAS
                             RandomNonRepeat.instance.InitializeOptions();
                         }
                         else
-                            SceneManager.LoadScene("Goodbye");
+                            SceneManager.LoadScene("Debriefing_instructions");
 
                         
                     }
