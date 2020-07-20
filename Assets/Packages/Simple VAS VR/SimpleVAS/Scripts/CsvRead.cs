@@ -17,14 +17,16 @@ public class CsvRead : MonoBehaviour {
 
     // Use this for initialization
     void Awake () {
-            if (SceneManager.GetActiveScene().name == "ForcedChoice") {
+            if (SceneManager.GetActiveScene().name == "ForcedChoice")
+            {
                 if (QuestionManager.conditionTouchOrMove == "touch")
                     Load(file_fc_touch, questionnaireInput);
                 else
                     Load(file_fc_move, questionnaireInput);
             }
 
-		Load (file, questionnaireInput);
+            else
+		        Load (file, questionnaireInput);
 	}
 		
 
