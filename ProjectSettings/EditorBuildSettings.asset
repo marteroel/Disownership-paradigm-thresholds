@@ -12,14 +12,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Instructions.unity
     guid: 7527b78934860824ea7df49561f949c1
   - enabled: 1
-    path: Assets/Scenes/StimulationTest.unity
-    guid: b892704149ce0e847a930c2dfbe32e51
-  - enabled: 1
     path: Assets/Scenes/Rod_and_Frame.unity
     guid: 5209c46fcabbe6e4e9710252b0c74fe4
   - enabled: 1
     path: Assets/Scenes/Proprio.unity
     guid: ed91794b04e529a4bbbf942eafe0af40
+  - enabled: 1
+    path: Assets/Scenes/StimulationTest.unity
+    guid: b892704149ce0e847a930c2dfbe32e51
+  - enabled: 1
+    path: Assets/Scenes/VAS_test.unity
+    guid: 3604ddb052a61cd42ab9b275bf2719ab
   - enabled: 1
     path: Assets/Scenes/Inter.unity
     guid: 590770d30d1ed7041a7cb4fed1fdbf30
