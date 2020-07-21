@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class MissedTrialInput : MonoBehaviour {
 
-    [HideInInspector]
-    public string missedTrial;
+    public static string missedTrial;
 
     public static MissedTrialInput instance;
-
-    private void Awake()
-    {
-        if (instance == null) instance = this;
-    }
 
     // Use this for initialization
     void Start () {

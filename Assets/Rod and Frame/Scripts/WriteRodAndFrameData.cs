@@ -28,8 +28,8 @@ namespace RodAndFrame {
 
         // Use this for initialization
         void Start() {
-            WriteToFile("subject ID", "trial", "repetition", "head x", "head y", "head z", "rod origin", "frame origin", "selection");
             participantID = BasicDataConfigurations.ID;
+            WriteToFile("subject ID", "trial", "repetition", "head x", "head y", "head z", "rod origin", "frame origin", "selection");
         }
 
 
