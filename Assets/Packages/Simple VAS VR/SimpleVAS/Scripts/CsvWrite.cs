@@ -31,14 +31,14 @@ namespace SimpleVAS
 
 
 		void Start () {
-			WriteToFile ("subject ID", "age", "gender", "handedness", "question ID", "questionnaire type", "condition", "delay", "value");
+			WriteToFile ("subject ID", "age", "gender", "handedness", "question ID", "questionnaire type", "condition", "delay", "value", "missed trial");
 		}
 			
 
 		public void onNextButtonPressed(){
 			if (BasicDataConfigurations.ID == null)
 				LoadNull ();
-			WriteToFile (BasicDataConfigurations.ID, BasicDataConfigurations.age, BasicDataConfigurations.gender, BasicDataConfigurations.handedness, QuestionManager.questionnaireItem,  SceneManager.GetActiveScene().name, QuestionManager.conditionTouchOrMove, ApplyRandomDelays.conditionDelayTime.ToString(), QuestionManager.VASvalue);
+			WriteToFile (BasicDataConfigurations.ID, BasicDataConfigurations.age, BasicDataConfigurations.gender, BasicDataConfigurations.handedness, QuestionManager.questionnaireItem,  SceneManager.GetActiveScene().name, QuestionManager.conditionTouchOrMove, ApplyRandomDelays.conditionDelayTime.ToString(), QuestionManager.VASvalue, MissedTrialInput.instance.missedTrial);
 		}
 
 		void LoadNull(){
@@ -51,9 +51,9 @@ namespace SimpleVAS
 			ConditionDictionary.selectedOrder = new string[3] {na, na, na};
 		}
 
-		void WriteToFile(string a, string b, string c, string d, string e, string f, string g, string h, string i){
+		void WriteToFile(string a, string b, string c, string d, string e, string f, string g, string h, string i, string j){
 
-			string stringLine =  a + "," + b + "," + c + "," + d + "," + e + "," + f + "," + g + "," + h + "," + i;
+			string stringLine =  a + "," + b + "," + c + "," + d + "," + e + "," + f + "," + g + "," + h + "," + i + "," + j;
 
 			System.IO.StreamWriter file = new System.IO.StreamWriter("./Logs/" + BasicDataConfigurations.ID + "_log.csv", true);
 			file.WriteLine(stringLine);
