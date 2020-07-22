@@ -18,8 +18,6 @@ namespace SimpleVAS
 
         public CsvWrite csvWriter;
 
-        public static string questionnaireItem, VASvalue;
-
         private int currentItem;
 
         // Use this for initialization
@@ -43,9 +41,9 @@ namespace SimpleVAS
         public void OnNextButton()
         {
             nextButton.interactable = false;
-            questionnaireItem = currentItem.ToString();
+            QuestionManager.questionnaireItem = currentItem.ToString();
    
-            VASvalue = SelectedToggle.activeToggle.ToString();
+            QuestionManager.VASvalue = SelectedToggle.activeToggle.ToString();
             
             csvWriter.onNextButtonPressed();
 
