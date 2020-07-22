@@ -539,7 +539,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1627059990}
+      - m_Target: {fileID: 0}
         m_MethodName: OnNextButton
         m_Mode: 1
         m_Arguments:
@@ -1977,11 +1977,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1627059987}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 275bf87eed212447590b8c34f5351655, type: 3}
+  m_Script: {fileID: 11500000, guid: 695a13e3db6419340bc988084f9fd326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Stimulation
-  changeOnKey: 1
+  secondsToWait: 3
 --- !u!114 &1627059991
 MonoBehaviour:
   m_ObjectHideFlags: 0
