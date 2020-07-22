@@ -72,6 +72,11 @@ namespace WebcamDelay {
 			//webcamTexture.Stop ();
 		}
 
+        public void EmptyBuffer() {
+            myBuffer.Clear();
+            Resources.UnloadUnusedAssets();
+        }
+
 		IEnumerator ConvertFrame(){
 
 			yield return null;

@@ -28,7 +28,7 @@ public class StimulationDuration : MonoBehaviour {
 		yield return new WaitForFixedTime (BasicDataConfigurations.trialDuration);
 		screenOff.SetActive (true); //turns off screen 
 		SceneManager.LoadScene(sceneToLoad);
-		//webcam.TurnOff ();
-
+        //webcam.TurnOff ();
+        webcam.EmptyBuffer();
 	}
 }
