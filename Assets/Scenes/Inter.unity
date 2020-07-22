@@ -1094,7 +1094,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: movement
+  m_Text: Bewegung
 --- !u!222 &1309759693
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1187,7 +1187,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: touch
+  m_Text: "Ber\xFChrung"
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0
