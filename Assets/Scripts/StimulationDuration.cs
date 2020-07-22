@@ -15,15 +15,10 @@ public class StimulationDuration : MonoBehaviour {
 	void Start () {
         StartCoroutine("WaitBeforeShowingCameraFeed");
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     private IEnumerator WaitBeforeShowingCameraFeed()
     {
-        yield return new WaitForFixedTime(1f);
+        yield return new WaitForFixedTime(0.7f);
         screenOff.SetActive(false);
         StartCoroutine("ChangeSceneAtTime");
     }
@@ -33,7 +28,7 @@ public class StimulationDuration : MonoBehaviour {
 		yield return new WaitForFixedTime (BasicDataConfigurations.trialDuration);
 		screenOff.SetActive (true); //turns off screen 
 		SceneManager.LoadScene(sceneToLoad);
-		webcam.TurnOff ();
+		//webcam.TurnOff ();
 
 	}
 }
