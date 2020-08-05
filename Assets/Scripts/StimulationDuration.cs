@@ -29,6 +29,5 @@ public class StimulationDuration : MonoBehaviour {
 		screenOff.SetActive (true); //turns off screen 
 		SceneManager.LoadScene(sceneToLoad);
         //webcam.TurnOff ();
-        webcam.EmptyBuffer();
 	}
 }
