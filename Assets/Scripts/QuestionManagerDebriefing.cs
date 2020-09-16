@@ -42,8 +42,8 @@ namespace SimpleVAS
         {
             nextButton.interactable = false;
             QuestionManager.questionnaireItem = currentItem.ToString();
-   
-            QuestionManager.VASvalue = SelectedToggle.activeToggle.ToString();
+
+            QuestionManager.VASvalue = scrollValue.value.ToString();
             
             csvWriter.onNextButtonPressed();
 
