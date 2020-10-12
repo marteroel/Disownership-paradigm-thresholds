@@ -11,7 +11,7 @@ public class ConditionalInstructions : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         //Debug.Log("current condition is : " + QuestionManager.currentCondition);
-
+        /*
         if (BasicDataConfigurations.condition == "1")
             if(QuestionManager.currentCondition == 0 | QuestionManager.currentCondition == 2 | QuestionManager.currentCondition == 5 | QuestionManager.currentCondition == 7) {
                 instructionsA.gameObject.SetActive(true);
@@ -21,6 +21,6 @@ public class ConditionalInstructions : MonoBehaviour {
             if (QuestionManager.currentCondition == 1 | QuestionManager.currentCondition == 3 | QuestionManager.currentCondition == 4 | QuestionManager.currentCondition == 6) {
                 instructionsB.gameObject.SetActive(true);
                 QuestionManager.conditionTouchOrMove = "move";
-            }
+            }*/
 	}
 }

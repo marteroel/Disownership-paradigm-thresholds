@@ -24,7 +24,7 @@ namespace SimpleVAS
 
 		private int currentItem;
 
-		public static int currentCondition;
+		//public static int currentCondition;
         public static string conditionTouchOrMove;
 
 		// Use this for initialization
@@ -82,7 +82,7 @@ namespace SimpleVAS
                     }
 
                     else {
-
+                        /*
                         if (currentCondition < 7) {
                             SceneManager.LoadScene("Inter");
                             currentCondition++;
@@ -90,7 +90,7 @@ namespace SimpleVAS
                         }
                         else
                             SceneManager.LoadScene("Debriefing_instructions");
-
+                            */
                         
                     }
 
