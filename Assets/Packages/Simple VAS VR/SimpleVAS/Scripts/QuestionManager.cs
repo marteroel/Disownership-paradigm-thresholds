@@ -25,7 +25,7 @@ namespace SimpleVAS
 		private int currentItem;
 
 		//public static int currentCondition;
-        public static string conditionTouchOrMove;
+        public static string conditionName;
 
 		// Use this for initialization
 		void Start () {

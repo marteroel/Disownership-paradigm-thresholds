@@ -28,8 +28,6 @@ namespace SimpleVAS
             questionUI.text = questionList[currentItem];
             nextButton.interactable = false;
 
-            QuestionManager.conditionTouchOrMove = "NA";
-
         }
 
         public void OnSelection()
