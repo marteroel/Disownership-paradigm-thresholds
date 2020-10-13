@@ -8,6 +8,7 @@ public class HandTracking : MonoBehaviour {
     public Transform hand;
 
     private Vector3 _previousPosition;
+    [HideInInspector]
     public bool logOn;
 
     public static HandTracking instance;
