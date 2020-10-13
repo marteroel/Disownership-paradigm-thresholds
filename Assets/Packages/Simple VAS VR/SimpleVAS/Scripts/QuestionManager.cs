@@ -83,13 +83,13 @@ namespace SimpleVAS
                     /*
                     else
                     {
-                        if (currentCondition < 7) {
+                        if (currentCondition < 7) { 
                             SceneManager.LoadScene("Inter");
                             currentCondition++;
                             RandomNonRepeat.instance.InitializeOptions();
                         }*/
                     else
-                        SceneManager.LoadScene("Debriefing_instructions");
+                        SceneManager.LoadScene("Goodbye");
                             
                         
                     //}
