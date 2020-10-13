@@ -8,8 +8,7 @@ public class HandTracking : MonoBehaviour {
     public Transform hand;
 
     private Vector3 _previousPosition;
-    [HideInInspector]
-    public bool logOn;
+    private bool logOn;
 
     public static HandTracking instance;
 
@@ -23,12 +22,16 @@ public class HandTracking : MonoBehaviour {
         WriteToFile("ID", "delay", "condition", "pos_x", "pos_y", "pos_z", "rot_x", "rot_y", "rot_z", "acceleration", "sample_time");
     }
 
+    public void LogOnOff(bool _log){
+        logOn = _log;
+    }
+
     private void Update()
     {
         if(logOn){
             float _accel = Vector3.Distance(hand.position, _previousPosition) / Time.deltaTime;
             _previousPosition = hand.position;
-            WriteToFile(BasicDataConfigurations.ID, ApplyRandomDelays.conditionDelayTime.ToString(), QuestionManager.conditionTouchOrMove, 
+            WriteToFile(BasicDataConfigurations.ID, ApplyRandomDelays.conditionDelayTime.ToString(), QuestionManager.conditionName, 
                 hand.position.x.ToString(), hand.position.y.ToString(), hand.position.z.ToString(),
                 hand.rotation.eulerAngles.x.ToString(), hand.rotation.eulerAngles.y.ToString(), hand.rotation.eulerAngles.z.ToString(), 
                 _accel.ToString(), Time.deltaTime.ToString());
