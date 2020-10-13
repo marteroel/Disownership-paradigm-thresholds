@@ -80,19 +80,19 @@ namespace SimpleVAS
                     if (!RandomNonRepeat.instance.isOver) {
                         SceneManager.LoadScene ("Stimulation");            
                     }
-
-                    else {
-                        /*
+                    /*
+                    else
+                    {
                         if (currentCondition < 7) {
                             SceneManager.LoadScene("Inter");
                             currentCondition++;
                             RandomNonRepeat.instance.InitializeOptions();
-                        }
-                        else
-                            SceneManager.LoadScene("Debriefing_instructions");
-                            */
+                        }*/
+                    else
+                        SceneManager.LoadScene("Debriefing_instructions");
+                            
                         
-                    }
+                    //}
 
 
                 }
