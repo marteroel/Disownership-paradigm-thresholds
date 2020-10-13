@@ -31,8 +31,12 @@ using VRStandardAssets.Menu;
 
 		private bool m_GazeOver;                                            // Whether the user is looking at the VRInteractiveItem currently.
 
+    private void Awake()
+    {
+        VRInteractiveCamera = GameObject.FindWithTag("VRUI");
+    }
 
-		private void OnEnable () {
+    private void OnEnable () {
 		
 			attachedButton = GetComponent<Button> ();	
 

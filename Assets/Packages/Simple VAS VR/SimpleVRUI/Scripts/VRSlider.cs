@@ -27,8 +27,12 @@ public class VRSlider : MonoBehaviour {
 
 
 
-	// Use this for initialization
-	void Start () {
+    private void Awake()
+    {
+        VRInteractiveCamera = GameObject.FindWithTag("VRUI");
+    }
+    // Use this for initialization
+    void Start () {
 
 		if (gazeTimeForSelection == 0) gazeTimeForSelection = 1;
 		

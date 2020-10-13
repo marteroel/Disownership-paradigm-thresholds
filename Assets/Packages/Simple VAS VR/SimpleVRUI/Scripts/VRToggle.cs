@@ -32,7 +32,12 @@ public class VRToggle: MonoBehaviour {
 	private bool m_GazeOver;                                            // Whether the user is looking at the VRInteractiveItem currently.
 
 
-	private void OnEnable () {
+    private void Awake()
+    {
+        VRInteractiveCamera = GameObject.FindWithTag("VRUI");
+    }
+
+    private void OnEnable () {
 
 		attachedToggle = GetComponent<Toggle> ();	
 
