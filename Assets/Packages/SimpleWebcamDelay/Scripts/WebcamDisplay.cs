@@ -1,97 +1,119 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;  
+using UnityEngine;
 using SimpleVAS;
 
-namespace WebcamDelay {
-	public class WebcamDisplay : MonoBehaviour {
+namespace WebcamDelay
+{
+    public class WebcamDisplay : MonoBehaviour
+    {
 
-		private WebCamTexture _webcamTexture;
+        private WebCamTexture webcamTexture;
+        private Texture2D delayedImage;
+        ArrayList myBuffer = new ArrayList();
 
-		public bool setDelay;
-		public float delayTimeSeconds;
+        public bool setDelay;
+        public float delayTimeSeconds;
+        public int webcamDeviceID;
 
-        private int buffer_index = 0;
-        private int buffer_size = 60;
-        private int buffer_current = 0;
 
-        private RenderTexture[] renderBuffer;
-        private long[] timeBuffer;
-
-        private Texture _delayedFeed;
-
-        private Renderer _renderer;
-
-        void Start () {
-
-            _renderer = GetComponent<Renderer>();
-
-            _webcamTexture = Webcam.instance.webcamTexture;
-            _webcamTexture.Play();
-
-            _delayedFeed = new Texture2D(_webcamTexture.width, _webcamTexture.height, TextureFormat.ARGB32, false);
-
-            InitializeBuffer();
-        }
-
-        void InitializeBuffer()
+        void Start()
         {
-            renderBuffer = new RenderTexture[buffer_size];
-            for (int ii = 0; ii < buffer_size; ii++)
-                renderBuffer[ii] = new RenderTexture(_webcamTexture.width, _webcamTexture.height, 24, RenderTextureFormat.ARGB32);
-            timeBuffer = new long[buffer_size];
+
+            //WebCamDevice[] devices = WebCamTexture.devices;
+            //string deviceName = devices[BasicDataConfigurations.selectedWebcamDevice].name;
+            //webcamTexture = new WebCamTexture(deviceName, 1024, 768);
+
+            webcamTexture = Webcam.instance.webcamTexture;
+            webcamTexture.Play();
         }
 
 
-        void Update () {
+        void Update()
+        {
 
-            if (setDelay)
-                if (_webcamTexture.didUpdateThisFrame)
-                    Delay(_webcamTexture);
+            if (webcamTexture.didUpdateThisFrame)
+            {
 
+                if (setDelay)
+                {
+                    StartCoroutine(ConvertFrame());
+                    StartCoroutine(DelayWebcam());
+                }
+
+                else if (!setDelay && myBuffer.Count != 0)
+                {
+                    StopAllCoroutines();
+                    myBuffer.Clear();
+                    Resources.UnloadUnusedAssets();
+                }
+            }
+
+        }
+
+        void FixedUpdate()
+        {
             UpdateFrame();
         }
 
 
-    void Delay(Texture _source)    {
-
-        long time = System.DateTime.Now.Ticks;
-        Graphics.Blit(_source, renderBuffer[buffer_index]);
-        timeBuffer[buffer_index] = time;
-
-        long delayTime = time - (long)(delayTimeSeconds * 10000000);
-
-        // Binary Search
-        int from = 0, to = buffer_size, mid;
-        while (from != to)
+        private void UpdateFrame()
         {
-            mid = (from + to) / 2;
-            if (timeBuffer[(mid + buffer_index + 1) % buffer_size] > delayTime)
-                to = mid;
-            else
-                from = mid + 1;
+
+            if (!setDelay)
+            {
+                Renderer renderer = GetComponent<Renderer>();
+                renderer.material.mainTexture = webcamTexture;
+            }
+
+            else if (setDelay)
+            {
+                Renderer renderer = GetComponent<Renderer>();
+                renderer.material.mainTexture = delayedImage;
+            }
+
         }
 
-        buffer_current = (from + buffer_index) % buffer_size;
+        //Added
+        void OnDestroy()
+        {
+            //webcamTexture.Stop ();
+        }
+        //added
+        public void TurnOff()
+        {
+            //webcamTexture.Stop ();
+        }
 
-        Graphics.CopyTexture(renderBuffer[buffer_current], _delayedFeed);
+        public void EmptyBuffer()
+        {
+            myBuffer.Clear();
+            Resources.UnloadUnusedAssets();
+        }
 
-        buffer_index = (buffer_index + 1) % buffer_size;
-    }
+        IEnumerator ConvertFrame()
+        {
+
+            yield return null;
+
+            Texture2D frame = new Texture2D(webcamTexture.width, webcamTexture.height);
+            frame.SetPixels32(webcamTexture.GetPixels32());
+            myBuffer.Add(frame);
+
+        }
+
+        IEnumerator DelayWebcam()
+        {
+
+            yield return new WaitForFixedTime(delayTimeSeconds); //custom coroutine
+
+            delayedImage = myBuffer[0] as Texture2D;
+            delayedImage.Apply();
+            myBuffer.RemoveAt(0);
+            Resources.UnloadUnusedAssets();
+
+        }
 
 
-    private void UpdateFrame () {
-
-        if (!setDelay) 
-            _renderer.material.mainTexture = _webcamTexture;
-        
-
-        else if (setDelay) 
-            _renderer.material.mainTexture = _delayedFeed;
-        
-
-    }
-			
-	
     }
 }
