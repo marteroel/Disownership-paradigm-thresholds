@@ -949,7 +949,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "v\xF6llig \neinverstanden"
+  m_Text: strongly agree
 --- !u!222 &1254765985
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2296,7 +2296,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Weiter
+  m_Text: Accept
 --- !u!222 &1866524148
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2661,7 +2661,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "gar nicht \neinverstanden"
+  m_Text: strongly disagree
 --- !u!222 &2126206982
 CanvasRenderer:
   m_ObjectHideFlags: 0

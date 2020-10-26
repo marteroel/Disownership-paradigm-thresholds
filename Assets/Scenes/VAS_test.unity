@@ -587,7 +587,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "gar nicht \neinverstanden"
+  m_Text: 'I have not
+
+    understood'
 --- !u!222 &792946348
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1010,7 +1012,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pizza schmeckt gut
+  m_Text: "If you have understood the questions, \nplease selcect \"I have understood\""
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1182,7 +1184,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "v\xF6llig \neinverstanden"
+  m_Text: 'I have
+
+    understood'
 --- !u!222 &1467133680
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1256,4 +1260,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d659938de635b72449c18475a6751dd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  show: 1
+  showUI: 0
+  log: 0

@@ -1187,7 +1187,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Instructions
+  m_Text: You will now proceed to the study
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2006,7 +2006,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d659938de635b72449c18475a6751dd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  show: 0
+  showUI: 0
+  log: 0
 --- !u!1 &1709006868
 GameObject:
   m_ObjectHideFlags: 0

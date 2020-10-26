@@ -462,7 +462,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Danke f\xFCr Ihre Teilnahme!"
+  m_Text: "Thank you for your participation! \nThe experimenter will be with you shortly..."
 --- !u!222 &1338755282
 CanvasRenderer:
   m_ObjectHideFlags: 0
