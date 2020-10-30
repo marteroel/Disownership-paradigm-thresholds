@@ -14,8 +14,8 @@ public class CsvRead : MonoBehaviour {
 
     // Use this for initialization
     void Awake () {
-            if (SceneManager.GetActiveScene().name == "ForcedChoice" && BasicDataConfigurations.condition == "self-no-touch")
-                file = "questions_forced_nt";
+//            if (SceneManager.GetActiveScene().name == "ForcedChoice" && BasicDataConfigurations.condition == "self-no-touch")
+  //              file = "questions_forced_nt";
 
 		 Load (file, questionnaireInput);
 	}
