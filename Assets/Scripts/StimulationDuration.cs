@@ -18,7 +18,7 @@ public class StimulationDuration : MonoBehaviour {
 
     private IEnumerator WaitBeforeShowingCameraFeed()
     {
-        yield return new WaitForFixedTime(0.7f);
+        yield return new WaitForFixedTime(0.75f);
         screenOff.SetActive(false);
         StartCoroutine("ChangeSceneAtTime");
     }

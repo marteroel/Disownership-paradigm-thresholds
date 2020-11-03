@@ -41,7 +41,7 @@ public class HandTracking : MonoBehaviour {
 
     private void WriteToFile(string a, string b, string c, string d, string e, string f, string g, string h, string i, string j, string k)
     {
-        string stringLine = a + "," + b + "," + c + "," + d + "," + e + "," + f + "," + g + "," + h;
+		string stringLine = a + "," + b + "," + c + "," + d + "," + e + "," + f + "," + g + "," + h + "," + k + "," + i + "," + j + "," + k;
 
         System.IO.StreamWriter file = new System.IO.StreamWriter("./Logs/" + BasicDataConfigurations.ID + "_handMovement_log.csv", true);
         file.WriteLine(stringLine);
