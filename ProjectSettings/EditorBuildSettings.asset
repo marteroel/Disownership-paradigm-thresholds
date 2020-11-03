@@ -11,11 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Instructions.unity
     guid: 7527b78934860824ea7df49561f949c1
-  - enabled: 1
-    path: Assets/Scenes/Rod_and_Frame.unity
+  - enabled: 0
+    path: Assets/Scenes/Not in use/Rod_and_Frame.unity
     guid: 5209c46fcabbe6e4e9710252b0c74fe4
-  - enabled: 1
-    path: Assets/Scenes/Proprio.unity
+  - enabled: 0
+    path: Assets/Scenes/Not in use/Proprio.unity
     guid: ed91794b04e529a4bbbf942eafe0af40
   - enabled: 1
     path: Assets/Scenes/StimulationTest.unity
@@ -35,11 +35,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VAS.unity
     guid: 1ac74d65664d29d448de307384961043
-  - enabled: 1
-    path: Assets/Scenes/Debriefing_instructions.unity
+  - enabled: 0
+    path: Assets/Scenes/Not in use/Debriefing_instructions.unity
     guid: 1169481aade65464e9fae87ddc795ef9
-  - enabled: 1
-    path: Assets/Scenes/Debriefing_VAS.unity
+  - enabled: 0
+    path: Assets/Scenes/Not in use/Debriefing_VAS.unity
     guid: 797fc83fd03256542bb300b70c7e93bc
   - enabled: 1
     path: Assets/Scenes/Goodbye.unity
