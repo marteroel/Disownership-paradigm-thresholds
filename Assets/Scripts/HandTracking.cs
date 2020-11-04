@@ -22,7 +22,7 @@ public class HandTracking : MonoBehaviour {
 
     private void Start()
     {
-        WriteToFile("ID", "delay", "condition", "pos_x", "pos_y", "pos_z", "rot_x", "rot_y", "rot_z", "acceleration", "sample_time");
+        WriteToFile("ID", "delay", "trial", "pos_x", "pos_y", "pos_z", "rot_x", "rot_y", "rot_z", "acceleration", "sample_time", "condition");
     }
 
     public void LogOnOff(bool _log){
