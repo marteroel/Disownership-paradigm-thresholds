@@ -11,6 +11,9 @@ public class HandTracking : MonoBehaviour {
     private bool logOn;
 
     public static HandTracking instance;
+	public float _accel;
+
+	public int number;
 
     private void Awake()
     {
@@ -29,9 +32,9 @@ public class HandTracking : MonoBehaviour {
     private void Update()
     {
         if(logOn){
-            float _accel = Vector3.Distance(hand.position, _previousPosition) / Time.deltaTime;
+            _accel = Vector3.Distance(hand.position, _previousPosition) / Time.deltaTime;
             _previousPosition = hand.position;
-            WriteToFile(BasicDataConfigurations.ID, ApplyRandomDelays.conditionDelayTime.ToString(), QuestionManager.conditionName, 
+			WriteToFile(BasicDataConfigurations.ID, ApplyRandomDelays.conditionDelayTime.ToString(), number.ToString(), 
                 hand.position.x.ToString(), hand.position.y.ToString(), hand.position.z.ToString(),
                 hand.rotation.eulerAngles.x.ToString(), hand.rotation.eulerAngles.y.ToString(), hand.rotation.eulerAngles.z.ToString(), 
                 _accel.ToString(), Time.deltaTime.ToString());
