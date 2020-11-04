@@ -37,14 +37,14 @@ public class HandTracking : MonoBehaviour {
 			WriteToFile(BasicDataConfigurations.ID, ApplyRandomDelays.conditionDelayTime.ToString(), number.ToString(), 
                 hand.position.x.ToString(), hand.position.y.ToString(), hand.position.z.ToString(),
                 hand.rotation.eulerAngles.x.ToString(), hand.rotation.eulerAngles.y.ToString(), hand.rotation.eulerAngles.z.ToString(), 
-                _accel.ToString(), Time.deltaTime.ToString());
+				_accel.ToString(), Time.deltaTime.ToString(), BasicDataConfigurations.condition);
         }
     }
 
 
-    private void WriteToFile(string a, string b, string c, string d, string e, string f, string g, string h, string i, string j, string k)
+	private void WriteToFile(string a, string b, string c, string d, string e, string f, string g, string h, string i, string j, string k, string l)
     {
-		string stringLine = a + "," + b + "," + c + "," + d + "," + e + "," + f + "," + g + "," + h + "," + k + "," + i + "," + j + "," + k;
+		string stringLine = a + "," + b + "," + c + "," + d + "," + e + "," + f + "," + g + "," + h + "," + k + "," + i + "," + j + "," + k + "," + l;
 
         System.IO.StreamWriter file = new System.IO.StreamWriter("./Logs/" + BasicDataConfigurations.ID + "_handMovement_log.csv", true);
         file.WriteLine(stringLine);
